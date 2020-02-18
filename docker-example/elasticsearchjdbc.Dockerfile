@@ -1,8 +1,7 @@
 FROM java:8-jre
 
 # Install base packages
-RUN apt-get -y update \
- && apt-get install -y unzip wget
+RUN apt-get install -y unzip wget
 
 # Install dockerize
 RUN wget -O /tmp/dockerize-linux-amd64-v0.0.4.tar.gz https://github.com/jwilder/dockerize/releases/download/v0.0.4/dockerize-linux-amd64-v0.0.4.tar.gz \
@@ -40,6 +39,3 @@ CMD dockerize \
     org.xbib.tools.Runner \
     org.xbib.tools.JDBCImporter \
     /tmp/config.json
-
-
-

@@ -1,7 +1,7 @@
 elasticsearchjdbc:
   build: .
-  dockerfile: Dockerfile_elasticsearchjdbc
+  dockerfile: elasticsearchjdbc.Dockerfile
   hostname: elasticsearchjdbc
   external_links:
-    - dockerexample_postgresql_1:database
-    - dockerexample_elasticsearch_1:elasticsearch
+    - docker-example_postgresql_1:database
+    - docker-example_elasticsearch_1:elasticsearch
